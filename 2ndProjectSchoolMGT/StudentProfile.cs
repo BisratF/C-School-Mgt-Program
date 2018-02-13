@@ -330,5 +330,10 @@ namespace _2ndProjectSchoolMGT
             clone_txt.Text = id.ToString();
             
         }
+
+        private void txt_Student_Email_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

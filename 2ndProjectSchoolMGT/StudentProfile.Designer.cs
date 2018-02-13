@@ -219,6 +219,7 @@
             this.txt_Student_Email.Name = "txt_Student_Email";
             this.txt_Student_Email.Size = new System.Drawing.Size(238, 20);
             this.txt_Student_Email.TabIndex = 17;
+            this.txt_Student_Email.TextChanged += new System.EventHandler(this.txt_Student_Email_TextChanged);
             // 
             // label15
             // 
