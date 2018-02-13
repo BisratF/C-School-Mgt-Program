@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{366735D2-039E-4776-BEA9-F4C02FCB57D3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_2ndProjectSchoolMGT</RootNamespace>
+    <AssemblyName>2ndProjectSchoolMGT</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>D:\Program Files (x86)\Bunifu Technologies\Bunifu Framework Manager\bin\updates\Bunifu UI 1.5.3\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="S22.Imap, Version=3.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\S22.Imap.3.6.0.0\lib\net40\S22.Imap.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tulpep.NotificationWindow, Version=1.1.23.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Tulpep.NotificationWindow.1.1.23\lib\net40\Tulpep.NotificationWindow.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel.Designer.cs">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttendanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttendanceForm.Designer.cs">
+      <DependentUpon>AttendanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashBoardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashBoardForm.Designer.cs">
+      <DependentUpon>DashBoardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmailPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EmailPanel.Designer.cs">
+      <DependentUpon>EmailPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GradeEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GradeEntry.Designer.cs">
+      <DependentUpon>GradeEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HtmL5Thing.cs" />
+    <Compile Include="SchoolMgt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchoolMgt.Designer.cs">
+      <DependentUpon>SchoolMgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LibraryPanel.Designer.cs">
+      <DependentUpon>LibraryPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParentsPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParentsPanel.Designer.cs">
+      <DependentUpon>ParentsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="schoolmgt_DataSet.cs">
+      <DependentUpon>schoolmgt_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="schoolmgt_DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>schoolmgt_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SMSPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SMSPanel.Designer.cs">
+      <DependentUpon>SMSPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentProfile.Designer.cs">
+      <DependentUpon>StudentProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentsPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentsPanel.Designer.cs">
+      <DependentUpon>StudentsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentsSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentsSchedule.Designer.cs">
+      <DependentUpon>StudentsSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeachersProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeachersProfile.Designer.cs">
+      <DependentUpon>TeachersProfile.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminPanel.resx">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttendanceForm.resx">
+      <DependentUpon>AttendanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashBoardForm.resx">
+      <DependentUpon>DashBoardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmailPanel.resx">
+      <DependentUpon>EmailPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GradeEntry.resx">
+      <DependentUpon>GradeEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchoolMgt.resx">
+      <DependentUpon>SchoolMgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LibraryPanel.resx">
+      <DependentUpon>LibraryPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParentsPanel.resx">
+      <DependentUpon>ParentsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SMSPanel.resx">
+      <DependentUpon>SMSPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentProfile.resx">
+      <DependentUpon>StudentProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentsPanel.resx">
+      <DependentUpon>StudentsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentsSchedule.resx">
+      <DependentUpon>StudentsSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeachersProfile.resx">
+      <DependentUpon>TeachersProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="schoolmgt_DataSet.xsc">
+      <DependentUpon>schoolmgt_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="schoolmgt_DataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>schoolmgt_DataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="schoolmgt_DataSet.xss">
+      <DependentUpon>schoolmgt_DataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FromMail.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToMail.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Collaboration_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attendance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gmail_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SMS_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graduate-.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Students-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Books-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Classroom_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-sticky-note-and-pin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Restart_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Content_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Administrative Tools_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Classroom_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graduation Cap_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Parent Guardian_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Library_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.xbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Profile_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grade.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
